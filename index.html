@@ -1,9 +1,33 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <button id="new-deck-btn">Get a new deck</button>
+        <div id="banner"><h1>The Game of War</h1></div>
+        <main id="game-container">
+            <button id="new-deck" class="btn">Get a new deck</button>
+            <div id="results">
+
+            </div>
+            <div id= "cards-container">
+                <div id="player1" class="player">
+                    <h2>Computer</h2>
+                    <div id="player1-cards" class="cards-spot">
+                    </div>
+                </div>
+                <div id="results"></div>
+                <div id="player2" class="player">
+                    <h2>Human</h2>
+                    <div id="player2-cards" class="cards-spot">
+                    </div>
+                </div>
+            </div>
+            <button id="draw-cards" class="btn">Draw new cards</button>
+        </main>  
         <script src="index.js"></script>
     </body>
 </html>
