@@ -9,13 +9,7 @@ html, body {
     color: #53524f;
 }
 
-#banner {
-    background: #cac531; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #cac531, #f3f9a7); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #cac531, #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
+/* Fonts */
 h1 {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
@@ -26,27 +20,7 @@ h2{
     color: #f4f4f4;
 }
 
-#game-container, #cards-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card-output {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.cards-spot {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 8em;
-    height: 11em;
-    border: 1px solid black;
-    margin: auto;
-}
-
+/* Buttons */
 .btn {
     font-family: inherit;
     border: none;
@@ -63,17 +37,59 @@ h2{
     background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin-bottom: 1.3em;
+    margin-top: 0;
 }
 
 #new-deck:hover, #draw-cards:hover {
     color: #fdfdfd;
-    border: 2px solid #fdfdfd;
+    border: 0.1em solid #fdfdfd;
     box-shadow: 2px 2px 4px #fdfdfd;
+    margin-bottom: 1.2em
 }
 
 #draw-cards {
     background: #b4b4b4;
     margin-bottom: 1.3em;
+}
+
+#draw-cards:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Layout */
+#banner {
+    background: #cac531; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cac531, #f3f9a7); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cac531, #f3f9a7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#game-container, #cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#remaining-cards{
+    text-transform: initial;
+    color: #f4f4f4;
+    margin-top: 0;
+}
+
+.card-output {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cards-spot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8em;
+    height: 11em;
+    border: 1px solid black;
+    margin: auto;
 }
 
 #results {

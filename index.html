@@ -10,23 +10,24 @@
         <div id="banner"><h1>The Game of War</h1></div>
         <main id="game-container">
             <button id="new-deck" class="btn">Get a new deck</button>
-            <div id="results">
-
+            <div id="game-status">
+                <h2 id="results">Get a new deck to start</h2>
+                <p id="remaining-cards">Remaining Cards = --</p>
             </div>
             <div id= "cards-container">
                 <div id="player1" class="player">
-                    <h2>Computer</h2>
+                    <h2 id="computer-score">Computer Score: 0</h2>
                     <div id="player1-cards" class="cards-spot">
                     </div>
                 </div>
                 <div id="results"></div>
                 <div id="player2" class="player">
-                    <h2>Human</h2>
+                    <h2 id="player-score">Player Score: 0</h2>
                     <div id="player2-cards" class="cards-spot">
                     </div>
                 </div>
             </div>
-            <button id="draw-cards" class="btn">Draw new cards</button>
+            <button disable id="draw-cards" class="btn">Draw new cards</button>
         </main>  
         <script src="index.js"></script>
     </body>
